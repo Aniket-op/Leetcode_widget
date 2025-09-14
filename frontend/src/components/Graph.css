@@ -1,0 +1,38 @@
+/* Base empty cells */
+.react-calendar-heatmap .color-empty {
+  fill: #eeeeee;
+}
+
+/* Heat levels */
+.react-calendar-heatmap .color-scale-1 {
+  fill: #c6e48b;
+}
+.react-calendar-heatmap .color-scale-2 {
+  fill: #7bc96f;
+}
+.react-calendar-heatmap .color-scale-3 {
+  fill: #239a3b;
+}
+.react-calendar-heatmap .color-scale-4 {
+  fill: #196127;
+}
+.range-selector {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.custom-date-inputs {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-date-inputs input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}

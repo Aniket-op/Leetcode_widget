@@ -1,13 +1,6 @@
-const express = require("express");
-const cors = require("cors");
-const PORT = 3000;
-
-const app = express();
-app.use(cors());
-
-app.get("/api/submissions/:username", async (req, res) => {
+const heatmapController = {
+  FetchHeatmap :async (req, res) => {
   const username = req.params.username;
-
   const query = `
     query getUserProfileCalendar($username: String!, $year: Int) {
       matchedUser(username: $username) {
@@ -29,8 +22,7 @@ app.get("/api/submissions/:username", async (req, res) => {
 
   const data = await response.json();
   res.json(data);
-});
+}
+}
 
-app.listen(PORT, () => {
-  console.log("http://localhost:3000");
-});
+module.exports = heatmapController;

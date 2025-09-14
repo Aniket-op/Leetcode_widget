@@ -1,0 +1,32 @@
+.username-form {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.username-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.username-input:focus {
+  border-color: #4cafef;
+}
+
+.username-btn {
+  padding: 8px 14px;
+  font-size: 16px;
+  background: #4cafef;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.username-btn:hover {
+  background: #3a9ed9;
+}
